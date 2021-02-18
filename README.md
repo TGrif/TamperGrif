@@ -8,6 +8,6 @@ We are not consumers but users, update link on Google search footer
 
 ### Stack Overflow infinite gold badge.user.js
 
-Change my 8 gold badges number to infinite sign
+Change my 8 gold badges number to infinity sign
 
 ## Licence WTFPL
