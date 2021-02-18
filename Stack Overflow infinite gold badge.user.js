@@ -4,7 +4,7 @@
 // @version      0.2
 // @description  Change my 8 gold badges number to infinite sign
 // @author       TGrif
-// @match        https://stackoverflow.com/
+// @match        https://stackoverflow.com/*
 // @grant        none
 // ==/UserScript==
 
