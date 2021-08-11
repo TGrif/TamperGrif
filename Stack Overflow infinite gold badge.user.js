@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Stack Overflow infinite gold badge
 // @namespace    http://direct-shoot.com/
-// @version      0.6
+// @version      0.7
 // @description  Change my 8 gold badges number to infinite sign
 // @author       TGrif
 // @match        https://stackoverflow.com/*
@@ -21,8 +21,10 @@
       height_gold.innerHTML = '∞';
       gold_badge.title = gold.title;
       let account_badges_gold = document.getElementsByClassName('badges')[0];
-      let account_gold = account_badges_gold.querySelector('.badgecount');
-      account_gold.innerHTML = '∞';
-      account_gold.title = gold_badge.title;
+      if (account_badges_gold) {
+        let account_gold = account_badges_gold.querySelector('.badgecount');
+        account_gold.innerHTML = '∞';
+        account_gold.title = gold_badge.title;
+      }
     }
 })();
