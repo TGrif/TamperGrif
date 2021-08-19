@@ -27,7 +27,7 @@
         account_gold.title = gold_badge.title;
       }
       let big_badges_gold = document.getElementsByClassName('fs-title fw-bold fc-black-800')[0];
-      if (big_badges_gold) {
+      if (big_badges_gold && big_badges_gold.innerHTML == 8) {
         big_badges_gold.innerHTML = '∞';
       }
     }
