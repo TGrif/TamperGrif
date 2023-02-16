@@ -10,27 +10,9 @@
 
 (function() {
     'use strict';
-    let profil_link = document.getElementsByClassName('my-profile js-gps-track')[0];
-    if (profil_link.href === 'https://stackoverflow.com/users/5156280/tgrif') {
-      let gold = document.querySelector('[title="8 gold badges"]');
-      let height = gold.querySelector('.badgecount');
-      height.textContent = '∞';
-      gold.title = '∞ gold badges';
-      let gold_badge = document.getElementsByClassName('s-badge__gold')[0];
-      if (gold_badge) {
-        let height_gold = gold_badge.querySelector('.flex__center');
-        height_gold.innerHTML = '∞';
-        gold_badge.title = gold.title;
-      }
-      let account_badges_gold = document.getElementsByClassName('badges')[0];
-      if (account_badges_gold) {
-        let account_gold = account_badges_gold.querySelector('.badgecount');
-        account_gold.innerHTML = '∞';
-        account_gold.title = gold_badge.title;
-      }
-      let big_badges_gold = document.getElementsByClassName('fs-title fw-bold fc-black-800')[0];
-      if (big_badges_gold && big_badges_gold.innerHTML == 8) {
-        big_badges_gold.innerHTML = '∞';
-      }
-    }
+    var badges = document.getElementsByClassName('v-visible-sr');
+    var gold_badge = document.querySelector('[title="8 gold badges"]');
+    gold_badge.innerText = "∞ gold badges";
+    gold_badge.innerHTML = '<span class="badge1">●</span><span class="badgecount">∞</span>';
+    gold_badge.title = "∞ gold badges";
 })();
